@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script src="jquery.min.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="backbone-min.js"></script>
+	<script src="index.js"></script>
+	<script src="nav.js"></script>
+	<script src="database.js"></script>
+</head>
+<body>
+
+	<div class="row">
+		<ul id="breadcrumbs"></ul>
+	</div>
+	<div class="row">
+		<div id="database-list"></div>
+	</div>
+
+	<script id="database-list-template" type="text/template">
+		<td>
+			<a href="#"><%= item %></a>
+		</td>
+		<td>
+			<button class="btn btn-info">Click Me</button>
+		</td>
+	</script>
+	
+
+
+	<script>
+		(function() {
+			Congo.init();
+		})();
+	</script>	
+</body>
+</html>
